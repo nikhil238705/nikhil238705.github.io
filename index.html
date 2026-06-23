@@ -9,13 +9,13 @@
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     :root {
-      --ink:       #1a1a2e;
-      --mid:       #4a4a6a;
-      --light:     #8888aa;
-      --paper:     #f7f6f2;
-      --accent:    #2e5c8a;
-      --rule:      #d4d0c8;
-      --white:     #ffffff;
+      --ink:    #1a1a2e;
+      --mid:    #4a4a6a;
+      --light:  #8888aa;
+      --paper:  #f7f6f2;
+      --accent: #2e5c8a;
+      --rule:   #d4d0c8;
+      --white:  #ffffff;
     }
 
     body {
@@ -31,15 +31,20 @@
       background: var(--ink);
       color: var(--white);
       padding: 60px 40px 50px;
+    }
+
+    .header-inner {
+      max-width: 860px;
+      margin: 0 auto;
       text-align: center;
     }
 
     header h1 {
       font-family: 'Cormorant Garamond', serif;
-      font-size: clamp(2.4rem, 6vw, 4rem);
+      font-size: clamp(2.2rem, 5vw, 3.6rem);
       font-weight: 700;
       letter-spacing: 0.02em;
-      margin-bottom: 8px;
+      margin-bottom: 6px;
     }
 
     header .designation {
@@ -48,14 +53,20 @@
       letter-spacing: 0.18em;
       text-transform: uppercase;
       color: var(--rule);
-      margin-bottom: 28px;
+      margin-bottom: 10px;
+    }
+
+    header .location {
+      font-size: 0.8rem;
+      color: var(--light);
+      margin-bottom: 22px;
     }
 
     .contact-bar {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      gap: 24px;
+      gap: 20px;
       font-size: 0.82rem;
       letter-spacing: 0.04em;
     }
@@ -70,10 +81,6 @@
     }
 
     .contact-bar a:hover { color: var(--white); }
-
-    .contact-bar span.icon {
-      font-size: 1rem;
-    }
 
     /* ── LAYOUT ── */
     main {
@@ -230,7 +237,7 @@
 
     /* ── RESPONSIVE ── */
     @media (max-width: 600px) {
-      header { padding: 40px 20px 36px; }
+      header { padding: 36px 20px 32px; }
       .job-header { flex-direction: column; gap: 2px; }
     }
   </style>
@@ -238,12 +245,15 @@
 <body>
 
 <header>
-  <h1>Nikhil Agarwal</h1>
-  <p class="designation">Chartered Accountant &nbsp;·&nbsp; Qualified May 2026</p>
-  <div class="contact-bar">
-    <a href="mailto:nikhil238705@gmail.com"><span class="icon">✉</span> nikhil238705@gmail.com</a>
-    <a href="tel:+918851210649"><span class="icon">✆</span> +91 88512 10649</a>
-    <a href="https://www.linkedin.com/in/nikhilagarwal238705/" target="_blank"><span class="icon">in</span> LinkedIn</a>
+  <div class="header-inner">
+    <h1>Nikhil Agarwal</h1>
+    <p class="designation">Chartered Accountant &nbsp;·&nbsp; Qualified May 2026</p>
+    <p class="location">📍 Indirapuram, Ghaziabad, India</p>
+    <div class="contact-bar">
+      <a href="mailto:nikhil238705@gmail.com">✉ nikhil238705@gmail.com</a>
+      <a href="tel:+918851210649">✆ +91 88512 10649</a>
+      <a href="https://www.linkedin.com/in/nikhilagarwal238705/" target="_blank">in LinkedIn</a>
+    </div>
   </div>
 </header>
 
@@ -264,7 +274,7 @@
       <div class="skill-item">Tax Compliance: GST Returns, TDS &amp; TCS, Income Tax Audit, Form 3CEB</div>
       <div class="skill-item">Statutory &amp; Internal Audit</div>
       <div class="skill-item">Preparation of Financial Statements, Reconciliation of Accounts &amp; GL Management</div>
-      <div class="skill-item">Accounting Software: Xero, Zoho, Tally</div>
+      <div class="skill-item">Accounting Software: Xero, Zoho, Tally (Basic)</div>
       <div class="skill-item">Advanced MS Excel &amp; MS Word</div>
     </div>
   </section>
@@ -279,7 +289,7 @@
         <h3>Finex Advisors</h3>
         <span class="period">July 2022 – Present</span>
       </div>
-      <p class="job-title">Executive</p>
+      <p class="job-title">Executive &nbsp;·&nbsp; Noida</p>
 
       <div class="project-block">
         <h4>Key Projects</h4>
@@ -289,11 +299,12 @@
           <li>Listed Hotel Chain: Annual and Quarterly Audit Support, Internal Control Testing and Ledger Reconciliation and Management.</li>
           <li>Leading Tractor Manufacturer: Consolidation of Financial Statements of Foreign Subsidiaries and coordinating with Auditors.</li>
           <li>Indian Component of Australia Based Tour Agency: Managed accounting, prepared Financials, assisted with Annual Audits and secretarial compliances, and Statutory Compliance (TDS, GSTR-8, GSTR-9 &amp; 9C, and Income Tax Returns).</li>
+          <li>Base Layer NBFC: Independently managed the audit engagement and led the audit team, ensuring timely completion of audit procedures and effective coordination with the client. Assisted the company in measuring the value of 3,800+ loans in accordance with Ind AS 109 requirements.</li>
         </ul>
       </div>
 
       <div class="project-block">
-        <h4>Other Projects</h4>
+        <h4>Independent Projects</h4>
         <ul>
           <li>Audited annual Financial Statements of manufacturers of cable management equipment (turnover ₹183+ Cr) and mobile battery manufacturer (turnover ₹2.5+ Cr).</li>
           <li>Ensured timely compliance of direct and indirect tax laws, including Form 10DAA filing (80JJAA deduction), by coordinating with clients and Article Assistants.</li>
