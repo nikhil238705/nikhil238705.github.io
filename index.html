@@ -1,76 +1,333 @@
- <div class="container">
-    <div class="row">
-      <div class="col-md-10 col-md-offset-1">
-        <div class="title text-center">
-          <h1>Nikhil Agarwal</h1>
-          <h3>Chartered Accountant</h3>
-          <h4><a href="https://www.linkedin.com/in/nikhilagarwal238705/">Linkedin</a></h4>
-          <hr />
-        </div>
-        
-<!-- Key Skills Section -->
-<div class="Key Skills">
-<h2 class="text Center">Key Skills</h2>
-<li>Tax Compliance: GST Returns, TDS & TCS, Income Tax Audit, Form 3CEB</li>
-<li>Statutory & Internal Audit</li>
-<li>Preparation of Financial Statements, Reconciliation of Accounts, and GL Management</li>
-<li>Accounting Software: Xero, Zoho, Tally</li>
-<li>Advanced MS Excel, MS Word</li>
-<hr />
-</div>
-        <!-- summary section -->
-        <div class="summary">
-          <h2 class="text-center">Summary</h2>
-          <p>CA with experience in Audit, Audit Support, Tax Compliances, Reconciliation of Financials Statements. RCM implementation, and control testing of Large MNCs, and small companies ensuring accuracy, timely compliances and effective financial operations.</p>
-<hr />          
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Nikhil Agarwal – Chartered Accountant</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-        <!-- work experience section -->
-        <div class="work-experience">
-          <h2 class="text-center">Work Experience</h2>
-          <div class="row experience-title">
-            <div class="col-md-9">
-              <h3>Finex Advisors</h3>
-              <h4>Executive</h4>
-            </div>
-            <div class="col-md-3">
-              <h3>July 2022 - Present</h3>
-            </div>
-          </div>
-          <div class="row experience-summary">
-            <div class="col-md-12">
-              <p>Key Projects:</p>
-		<p>
-		<li>Telecom Subsidiary (₹1,000+ Cr Net Profit): Tax Audit Support, TDS Payments and Return 				Preparation, Ledger Management and Reconciliation support for 3CEB Filing.</li>
-		<li>Decacorn E-commerce & SCM Startup: GSTR reconciliation, GST registration, tax audits, Tax 			Computation and Vendor Query Management (GSTR 2B and Purchase Register Reco and Vendor 				Accounts Reconciliation).</li>
-		<li>Listed Hotel Chain: Annual and Quarterly Audit Support, Internal Control Testing and Ledger 			Reconciliation and Management.</li>
-		<li>Leading Tractor Manufacturer: Consolidation of Financial Statements of Foreign Subsidiaries 			and Coordinating with the Auditors.</li>
-		<li>Indian Component of Australia Based Tour Agency: Managed accounting, Prepared Financials, 			Assisted with Annual Audits (performed by a legacy firm) and secretarial compliances, and 			Statutory Compliance (TDS, GSTR-8, GSTR-9 & 9C, and Income Tax Returns)</li>
-</p>
+    :root {
+      --ink:       #1a1a2e;
+      --mid:       #4a4a6a;
+      --light:     #8888aa;
+      --paper:     #f7f6f2;
+      --accent:    #2e5c8a;
+      --rule:      #d4d0c8;
+      --white:     #ffffff;
+    }
 
-	     <p>Other Projects:</P>
-		<p>
-		<li>Audited annual Financial Statements of manufacturers of cable management equipment with 			turnover of + INR  183 Crores and mobile battery manufacturer with the turnover of INR + 			2.5 Crores.</li>
-		<li>Ensured timely compliance of direct and indirect tax laws, including Form 10DAA filing 				(80JJAA deduction) by coordinating with clients and team of Article Assistants.</li>
-		<li>Equity Valuations under DCF models and under rule 11UA.</li>
-		<li>Filing Form 3CEB for an Glass Manufacturing Entity along with Flip Side 3CEB for its 				associate enterprises.</li>
-		<li>Conducted stock audits for multiple entities, improving compliance adherence.</li>
-	    </p>
-<hr />      
+    body {
+      background: var(--paper);
+      color: var(--ink);
+      font-family: 'Inter', sans-serif;
+      font-weight: 300;
+      line-height: 1.7;
+    }
+
+    /* ── HEADER ── */
+    header {
+      background: var(--ink);
+      color: var(--white);
+      padding: 60px 40px 50px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(2.4rem, 6vw, 4rem);
+      font-weight: 700;
+      letter-spacing: 0.02em;
+      margin-bottom: 8px;
+    }
+
+    header .designation {
+      font-size: 0.85rem;
+      font-weight: 500;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--rule);
+      margin-bottom: 28px;
+    }
+
+    .contact-bar {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 24px;
+      font-size: 0.82rem;
+      letter-spacing: 0.04em;
+    }
+
+    .contact-bar a {
+      color: #a8c4e0;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      transition: color 0.2s;
+    }
+
+    .contact-bar a:hover { color: var(--white); }
+
+    .contact-bar span.icon {
+      font-size: 1rem;
+    }
+
+    /* ── LAYOUT ── */
+    main {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 0 24px 60px;
+    }
+
+    /* ── SECTION ── */
+    section {
+      padding: 44px 0 0;
+    }
+
+    .section-label {
+      font-size: 0.68rem;
+      font-weight: 500;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 6px;
+    }
+
+    section h2 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.75rem;
+      font-weight: 600;
+      color: var(--ink);
+      margin-bottom: 18px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid var(--rule);
+    }
+
+    /* ── SUMMARY ── */
+    .summary p {
+      font-size: 0.95rem;
+      color: var(--mid);
+      line-height: 1.8;
+    }
+
+    /* ── SKILLS ── */
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 10px;
+    }
+
+    .skill-item {
+      background: var(--white);
+      border: 1px solid var(--rule);
+      border-left: 3px solid var(--accent);
+      padding: 10px 14px;
+      font-size: 0.88rem;
+      color: var(--mid);
+      border-radius: 2px;
+    }
+
+    /* ── EXPERIENCE ── */
+    .job {
+      margin-bottom: 36px;
+    }
+
+    .job-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 4px;
+    }
+
+    .job-header h3 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.3rem;
+      font-weight: 600;
+      color: var(--ink);
+    }
+
+    .job-header .period {
+      font-size: 0.78rem;
+      font-weight: 500;
+      letter-spacing: 0.06em;
+      color: var(--light);
+      white-space: nowrap;
+    }
+
+    .job-title {
+      font-size: 0.82rem;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 14px;
+    }
+
+    .project-block {
+      margin-bottom: 18px;
+    }
+
+    .project-block h4 {
+      font-size: 0.78rem;
+      font-weight: 500;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--light);
+      margin-bottom: 8px;
+    }
+
+    .project-block ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .project-block ul li {
+      font-size: 0.88rem;
+      color: var(--mid);
+      padding: 5px 0 5px 16px;
+      position: relative;
+      border-bottom: 1px solid var(--rule);
+      line-height: 1.6;
+    }
+
+    .project-block ul li:last-child { border-bottom: none; }
+
+    .project-block ul li::before {
+      content: '—';
+      position: absolute;
+      left: 0;
+      color: var(--accent);
+      font-size: 0.75rem;
+      top: 6px;
+    }
+
+    /* ── EDUCATION ── */
+    .edu-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+      padding: 14px 0;
+      border-bottom: 1px solid var(--rule);
+      font-size: 0.9rem;
+      color: var(--mid);
+    }
+
+    .edu-item:last-child { border-bottom: none; }
+
+    .edu-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--accent);
+      margin-top: 7px;
+      flex-shrink: 0;
+    }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 600px) {
+      header { padding: 40px 20px 36px; }
+      .job-header { flex-direction: column; gap: 2px; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Nikhil Agarwal</h1>
+  <p class="designation">Chartered Accountant &nbsp;·&nbsp; Qualified May 2026</p>
+  <div class="contact-bar">
+    <a href="mailto:nikhil238705@gmail.com"><span class="icon">✉</span> nikhil238705@gmail.com</a>
+    <a href="tel:+918851210649"><span class="icon">✆</span> +91 88512 10649</a>
+    <a href="https://www.linkedin.com/in/nikhilagarwal238705/" target="_blank"><span class="icon">in</span> LinkedIn</a>
+  </div>
+</header>
+
+<main>
+
+  <!-- Summary -->
+  <section class="summary">
+    <p class="section-label">Profile</p>
+    <h2>Summary</h2>
+    <p>CA with experience in Audit, Audit Support, Tax Compliances, and Reconciliation of Financial Statements. RCM implementation and control testing for Large MNCs and small companies, ensuring accuracy, timely compliance, and effective financial operations.</p>
+  </section>
+
+  <!-- Key Skills -->
+  <section>
+    <p class="section-label">Expertise</p>
+    <h2>Key Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-item">Tax Compliance: GST Returns, TDS &amp; TCS, Income Tax Audit, Form 3CEB</div>
+      <div class="skill-item">Statutory &amp; Internal Audit</div>
+      <div class="skill-item">Preparation of Financial Statements, Reconciliation of Accounts &amp; GL Management</div>
+      <div class="skill-item">Accounting Software: Xero, Zoho, Tally</div>
+      <div class="skill-item">Advanced MS Excel &amp; MS Word</div>
+    </div>
+  </section>
+
+  <!-- Work Experience -->
+  <section>
+    <p class="section-label">Career</p>
+    <h2>Work Experience</h2>
+
+    <div class="job">
+      <div class="job-header">
+        <h3>Finex Advisors</h3>
+        <span class="period">July 2022 – Present</span>
       </div>
-          </div>
-<!-- Education Section -->
-<div class="Education">
-<h2 class="text Center">Education</h2>
-<li>CA Final, ICAI (Exemption in Adv. Financial Management and Indirect Tax and Custom Laws. 50+ in Financial Reporting and Direct Tax Laws and International Taxation)</li>
-<li>CA Intermediate, ICAI (Exemptions: Accounts, Taxes, Law, Costing, Adv. Accounts)</li>
-<li>CA Foundation, ICAI (Exemptions: Three Subjects)</li>
-<li>B.Com Chaudhary Charan Singh University</li>
-<hr />
-</div>
-                </ul>
-            </div>
-          </div>
-        </div>
+      <p class="job-title">Executive</p>
+
+      <div class="project-block">
+        <h4>Key Projects</h4>
+        <ul>
+          <li>Telecom Subsidiary (₹1,000+ Cr Net Profit): Tax Audit Support, TDS Payments and Return Preparation, Ledger Management and Reconciliation support for 3CEB Filing.</li>
+          <li>Decacorn E-commerce &amp; SCM Startup: GSTR reconciliation, GST registration, tax audits, Tax Computation and Vendor Query Management (GSTR 2B and Purchase Register Reco and Vendor Accounts Reconciliation).</li>
+          <li>Listed Hotel Chain: Annual and Quarterly Audit Support, Internal Control Testing and Ledger Reconciliation and Management.</li>
+          <li>Leading Tractor Manufacturer: Consolidation of Financial Statements of Foreign Subsidiaries and coordinating with Auditors.</li>
+          <li>Indian Component of Australia Based Tour Agency: Managed accounting, prepared Financials, assisted with Annual Audits and secretarial compliances, and Statutory Compliance (TDS, GSTR-8, GSTR-9 &amp; 9C, and Income Tax Returns).</li>
+        </ul>
+      </div>
+
+      <div class="project-block">
+        <h4>Other Projects</h4>
+        <ul>
+          <li>Audited annual Financial Statements of manufacturers of cable management equipment (turnover ₹183+ Cr) and mobile battery manufacturer (turnover ₹2.5+ Cr).</li>
+          <li>Ensured timely compliance of direct and indirect tax laws, including Form 10DAA filing (80JJAA deduction), by coordinating with clients and Article Assistants.</li>
+          <li>Equity Valuations under DCF models and under Rule 11UA.</li>
+          <li>Filed Form 3CEB for a Glass Manufacturing entity along with Flip Side 3CEB for its associate enterprises.</li>
+          <li>Conducted stock audits for multiple entities, improving compliance adherence.</li>
+        </ul>
       </div>
     </div>
-  </div>
+  </section>
+
+  <!-- Education -->
+  <section>
+    <p class="section-label">Academics</p>
+    <h2>Education</h2>
+    <div class="edu-item">
+      <div class="edu-dot"></div>
+      <span><strong>CA Final</strong>, ICAI — Qualified May 2026 &nbsp;(Exemptions: Advanced Financial Management, Indirect Tax &amp; Custom Laws; 50+ in Financial Reporting, Direct Tax Laws &amp; International Taxation)</span>
+    </div>
+    <div class="edu-item">
+      <div class="edu-dot"></div>
+      <span><strong>CA Intermediate</strong>, ICAI &nbsp;(Exemptions: Accounts, Taxes, Law, Costing, Advanced Accounts)</span>
+    </div>
+    <div class="edu-item">
+      <div class="edu-dot"></div>
+      <span><strong>CA Foundation</strong>, ICAI &nbsp;(Exemptions: Three Subjects)</span>
+    </div>
+    <div class="edu-item">
+      <div class="edu-dot"></div>
+      <span><strong>B.Com</strong>, Chaudhary Charan Singh University</span>
+    </div>
+  </section>
+
+</main>
+
+</body>
+</html>
